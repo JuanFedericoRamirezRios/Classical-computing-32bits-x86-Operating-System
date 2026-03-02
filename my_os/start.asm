@@ -11,3 +11,6 @@ _start: ; Function _start
 section .bss ; In this section define the variables.
 resb 8192 ;reserve bytes: 8KB for our stack
 stack: ; Empty function
+
+
+

@@ -12,7 +12,7 @@ _start: ; Function _start
     cli ;  disable (or clear) interrupts. Avoid that other instructions awake the CPU
     mov esp, stack ; stack -> ESP (Pointing to memory addresses) allocate some memory for the stack and point the stack pointer (esp) to it.
     call kernel_early
-    call main ; call the main in an EXTERNAL file
+    call main ; call the main in an EXTERNAL file. Entry point into all applications.
     hlt ; halt for the moment, Later on we will omit this instruction.
 
 section .bss ; In this section define the variables.
