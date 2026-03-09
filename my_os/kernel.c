@@ -20,6 +20,6 @@ int main(void) { //Entry point into all applications.
 }
 
 /**
- * Compile: gcc -c kernel.c -o kernel -ffreestanding -m32. -ffreestanding:  standard C library may not exist and that the entry point may not necessarily by located at main. -m32: 32-bit acchitecture.
+ * Compile: gcc -c kernel.c -o kernel.o -ffreestanding -m32. -ffreestanding:  standard C library may not exist and that the entry point may not necessarily by located at main. -m32: 32-bit acchitecture.
  **/
 
